@@ -2,18 +2,19 @@ import React from "react";
 
 function NavBar(): React.JSX.Element {
   return (
-    <div className="navbar bg-base-200 p-4 justify-center">
-      <div className="max-w-screen-lg md:max-w-screen-md grow">
+    <div className="navbar p-4 px-8 lg:px-24 justify-center backdrop-blur-xl bg-base-100/70 sticky top-0 z-50">
+      <div className="max-w-screen-lg lg:max-w-screen-lg grow">
         <div className="navbar-start text-start">
-          <a href="/" className="btn text-accent text-2xl">jobsie</a>
+          <a
+            href="/"
+            className="btn btn-ghost btn-lg text-2xl text-base-content font-mono font-light"
+          >
+            jobsie
+          </a>
         </div>
-        <div className="navbar-end text-end">
+        <div className="navbar-end text-base-content text-end">
           <div className="dropdown dropdown-bottom dropdown-end">
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn btn-ghost text-accent btn-circle"
-            >
+            <div tabIndex={0} role="button" className="btn btn-ghost btn-xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -29,14 +30,14 @@ function NavBar(): React.JSX.Element {
                 />
               </svg>
             </div>
-            <ul
-              tabIndex={0}
-              className="menu grow-0 w-[124px] dropdown-content rounded-box m-2 bg-base-300 shadow"
-            >
-              <a href="/aboutme" className="btn btn-ghost">
+
+            <ul className="menu w-40 font-mono bg-base-200/60 p-2 dropdown-content mt-8 rounded-box gap-2 shadow">
+              <a href="/aboutme" className="btn rounded-box w-full">
                 About me
               </a>
-              <a href="#contact" className="btn btn-primary">Contact</a>
+              <a href="#contact" className="btn rounded-box btn-primary w-full">
+                Contact
+              </a>
             </ul>
           </div>
         </div>

@@ -21,3 +21,9 @@
     text-wrap: balance;
   }
 }
+
+@layer components {
+  .grid-item {
+    @apply card !z-0 card-compact bg-gradient-to-tr from-primary to-secondary text-primary-content rounded-box;
+  }
+}
