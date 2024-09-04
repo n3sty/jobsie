@@ -9,6 +9,7 @@ function AppGrid() {
         "Bookmark tells you exactly how long you'll be reading your favorite books. It's a simple app that helps you track your reading progress and it helped me understand API's better.",
       repo: "book-experiment",
       img: "book-experiment.png",
+      link: "https://bookmark.jobsie.me/",
     },
     acbud: {
       name: "ACBUD",
@@ -16,6 +17,7 @@ function AppGrid() {
         "ACBUD is a simple app that is meant to bring people with productivity goals together. It gives them a platform to gain accountability partners and share their progress.",
       repo: "acbud",
       img: "acbud.png",
+      link: "https://acbud.jobsie.me/",
     },
     jobsie: {
       name: "Jobsie",
@@ -23,6 +25,7 @@ function AppGrid() {
         "You're on the site right now! This is my personal portfolio where I keep all my different projects. On its own, it's a project that allows me to apply all that I've learned and show it off in one place.",
       repo: "jobsie",
       img: "jobsie.png",
+      link: "https://jobsie.me/",
     },
 
   };

@@ -2,11 +2,8 @@
 
 import Image from "next/image";
 import React from "react";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
 
-function AppCard({ name, summary, repo, img }: any) {
-  const router = useRouter();
+function AppCard({ name, summary, repo, img, link }: any) {
   return (
     <div className="grid-item">
       <figure>
@@ -20,12 +17,12 @@ function AppCard({ name, summary, repo, img }: any) {
       </figure>
       <div className="card-body">
         <h2 className="card-title">
-          <button
-            onClick={() => router.push(`/projects/${name}`)}
+          <a
+            href={link}
             className="btn btn-ghost hover:bg-white hover:shadow-lg btn-sm text-xl"
           >
             {name}
-          </button>
+          </a>
         </h2>
         <p className="card-description font-mono p-1">{summary}</p>
         <div className="card-actions mt-2">
