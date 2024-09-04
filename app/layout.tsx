@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html data-theme="night" lang="en">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${inter.className} antialiased scroll-smooth`}>{children}</body>
     </html>
   );
 }

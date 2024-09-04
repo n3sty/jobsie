@@ -1,19 +1,16 @@
 import { Suspense } from "react";
 import AppGrid from "./(components)/appgrid";
 import Hero from "./(components)/hero";
-import NavBar from "./(components)/navbar";
-import AppGridSkeleton from "./(components)/(skeletons)/appgridskeleton";
+// import AppGridSkeleton from "./(components)/(skeletons)/appgridskeleton";
+import Layout from "@/app/(components)/layout";
 
 export default function Home() {
   return (
     <>
-      <NavBar />
-      <main className="flex min-h-screen flex-col items-center px-8 py-4 lg:p-24">
+      <Layout>
         <Hero />
-        <Suspense fallback={<AppGridSkeleton />}>
-          <AppGrid />
-        </Suspense>
-      </main>
+        <AppGrid />
+      </Layout>
     </>
   );
 }
